@@ -27,7 +27,6 @@ public class Main {
     private static ContractListImpl contractListImpl;
     private static EmployeeListImpl employeeListImpl;
 
-
     public static void main(String[] args) throws IOException {
         ArrayList<Insurance> insuranceList = new ArrayList<>();
         insuranceListImpl = new InsuranceListImpl(insuranceList);
