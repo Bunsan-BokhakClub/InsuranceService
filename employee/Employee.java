@@ -4,6 +4,8 @@ import contract.Contract;
 import employee.sellingRecord.SellingRecord;
 import payment.Payment;
 
+import java.util.ArrayList;
+
 public class Employee {
 
 	private String employeeID;
@@ -11,7 +13,7 @@ public class Employee {
 	private String employeePhoneNumber;
 	private String incidentDate;
 	private String position;
-	public SellingRecord sellingRecord;
+	public ArrayList<SellingRecord> sellingRecordList;
 	public Contract contract;
 	public Payment payment;
 
@@ -19,28 +21,35 @@ public class Employee {
 
 	}
 
-	public void addSellingRecord(){
-
+	public String getEmployeeID() {
+		return employeeID;
 	}
 
-	public String getEmployeeName(){
-		return "";
+	public String getEmployeeName() {
+		return employeeName;
 	}
 
-	public String getEmployeePhoneNumber(){
-		return "";
+	public String getEmployeePhoneNumber() {
+		return employeePhoneNumber;
 	}
 
-	public void updateEmployeeName(){
-
+	public String getIncidentDate() {
+		return incidentDate;
 	}
 
-	public void updateEmployeePhoneNumber(){
-
+	public String getPosition() {
+		return position;
 	}
 
-	public void updatePosition(){
-
+	public ArrayList<SellingRecord> getSellingRecordList() {
+		return sellingRecordList;
 	}
 
+	public Contract getContract() {
+		return contract;
+	}
+
+	public Payment getPayment() {
+		return payment;
+	}
 }

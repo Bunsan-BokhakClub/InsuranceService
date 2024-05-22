@@ -1,12 +1,14 @@
 package partner;
 
+import java.util.ArrayList;
+
 public interface PartnerList {
 
-	public void add();
+	public void add(Partner partner);
 
 	public void delete();
 
-	public void get();
+	public ArrayList<Partner> get();
 
 	public void update();
 

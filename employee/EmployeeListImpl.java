@@ -7,8 +7,8 @@ public class EmployeeListImpl implements EmployeeList {
 	private ArrayList<Employee> employeeList;
 	public Employee employee;
 
-	public EmployeeListImpl(){
-
+	public EmployeeListImpl(ArrayList<Employee> employeeList){
+		this.employeeList = employeeList;
 	}
 
 	public void add(){
@@ -19,8 +19,17 @@ public class EmployeeListImpl implements EmployeeList {
 
 	}
 
-	public void get(){
+	public ArrayList<Employee> get(){
+		return employeeList;
+	}
 
+	public Employee getEmployeeByID(String id) {
+		for (Employee employee : employeeList) {
+			if (employee.getEmployeeID().equals(id)) {
+				return employee;
+			}
+		}
+		return null;
 	}
 
 	public void update(){

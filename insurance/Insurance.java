@@ -10,26 +10,42 @@ public class Insurance {
 	private String insuranceID;
 	private int paymentAmount;
 	private String paymentCycle;
+	private String insurancePeriod;
 	public Contract contract;
 
 	public Insurance(){
 
 	}
 
-	public void updateCompensation(){
-
+	public int getCompensationAmount() {
+		return compensationAmount;
 	}
 
-	public void updateinsuranceName(){
-
+	public String getCycleType() {
+		return cycleType;
 	}
 
-	public void updatePayment(){
-
+	public String getInsuranceName() {
+		return insuranceName;
 	}
 
-	public void updatePaymentCycle(){
-
+	public String getInsuranceID() {
+		return insuranceID;
 	}
 
+	public int getPaymentAmount() {
+		return paymentAmount;
+	}
+
+	public String getPaymentCycle() {
+		return paymentCycle;
+	}
+
+	public Contract getContract() {
+		return contract;
+	}
+
+	public String getInsurancePeriod() {
+		return insurancePeriod;
+	}
 }

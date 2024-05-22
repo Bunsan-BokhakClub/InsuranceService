@@ -8,34 +8,46 @@ public class CompensationClaim {
 	private String documentFile;
 	private String insuranceID;
 	private String insuranceName;
-	public Servey servey;
+	private int contractID;
+	public Survey survey;
 
 	public CompensationClaim(){
 
 	}
 
-	public int getCompensationClaimAmount(){
-		return 0;
+	public int getCompensationClaimAmount() {
+		return compensationClaimAmount;
 	}
 
-	public String getCustomerName(){
-		return "";
+	public String getCustomerID() {
+		return customerID;
 	}
 
-	public String getDocumentFile(){
-		return null;
+	public String getCustomerName() {
+		return customerName;
 	}
 
-	public String getInsuranceName(){
-		return "";
+	public String getDocumentFile() {
+		return documentFile;
 	}
 
-	public void updateCompensationAmount(){
-
+	public String getInsuranceID() {
+		return insuranceID;
 	}
 
-	public void updateDocumentFile(){
-
+	public String getInsuranceName() {
+		return insuranceName;
 	}
 
+	public int getContractID() {
+		return contractID;
+	}
+
+	public Survey getSurvey() {
+		return survey;
+	}
+
+	public void setSurvey(Survey survey) {
+		this.survey = survey;
+	}
 }

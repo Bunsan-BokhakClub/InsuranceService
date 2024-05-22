@@ -7,8 +7,8 @@ public class InsuranceListImpl implements InsuranceList {
     private ArrayList<Insurance> insuranceList;
     public Insurance m_Insurance;
 
-    public InsuranceListImpl(){
-
+    public InsuranceListImpl(ArrayList<Insurance> insuranceList){
+        this.insuranceList = insuranceList;
     }
 
 
@@ -20,12 +20,17 @@ public class InsuranceListImpl implements InsuranceList {
 
     }
 
-    public void getInsuranceByID(){
-
+    public Insurance getInsuranceByID(String id){
+        for (Insurance insurance : insuranceList) {
+            if(insurance.getInsuranceID().equals(id)){
+                return insurance;
+            }
+        }
+        return null;
     }
 
-    public void get(){
-
+    public ArrayList<Insurance> get(){
+        return insuranceList;
     }
 
     public void update(){
